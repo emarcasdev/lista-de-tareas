@@ -1,0 +1,134 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    line-height: 1.5;
+    background-image: url(Multimedia/fondo.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    color: #68435E;
+}
+
+.principal {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 70%; 
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E7E1EB;
+    padding: 5%;
+    border: solid 5px #80b3ff; 
+    border-radius: 1rem;
+}
+
+/* Aquí le cambiamos el ancho del contenedor, para que se vea mejor en el monitor */
+@media screen and (min-width: 750px){
+    .principal{
+        width: 25%;
+    }
+}
+
+.escribir-tarea {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"] {
+    margin-right: 10px; 
+}
+
+input {
+    padding: 1rem; 
+    outline: none;
+    width: 100%;
+    background-color: #061126;
+    border-radius: 1rem;
+    color: #E7E1EB;
+}
+
+.tareas {
+    background-color: #E7E1EB;
+    width: 100%;
+    margin-top: 2vh; 
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    color: #EEEEEE;
+    background-color: #061126;
+    border-radius: 1rem; 
+    padding: 1rem; 
+    margin-top: 1rem; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+
+li span {
+    flex-grow: 1;
+}
+
+li p {
+    margin: 0;
+    padding: 1rem; 
+    width: 100%;
+}
+
+.boton-añadido {
+    border-radius: 0.5rem;
+    padding: 0.7rem ; 
+    border: none;
+    color: #EEEEEE;
+    font-family: fantasy;
+    background-color: #3975c9;
+    font-size: 1rem; 
+    outline: none;
+}
+
+.boton-añadido:hover {
+    cursor: pointer;
+    background-color: #629ef1;
+}
+
+.boton-añadido span {
+    font-size: 120%;
+}
+
+.sin-tareas {
+    color: #1f1e1e67;
+    
+}
+
+.hecho {
+    text-decoration: line-through;
+    color: #80a9e4;
+}
+
+.borrar {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: auto;
+    font-size: 120%;
+}
